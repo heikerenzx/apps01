@@ -16,7 +16,7 @@
 		
 		public function __construct()
 		{
-			inlcude "./configs/dbconfigs.php";
+			inlcude "./configs/db.configs.php";
 			$this->hostname = $dbconfigs["localhost"];
 			$this->root     = $dbconfigs["root"];
 			$this->password = $dbconfigs["password"];
