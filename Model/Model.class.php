@@ -16,7 +16,12 @@
 		
 		public function __construct()
 		{
-			
+			inlcude "./configs/dbconfigs.php";
+			$this->hostname = $dbconfigs["localhost"];
+			$this->root     = $dbconfigs["root"];
+			$this->password = $dbconfigs["password"];
+			$this->dbname   = $dbconfigs["dbname"];
+			$this->charset  = $dbconfigs["charset"];
 		}
 	}
 ?>
